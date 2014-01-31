@@ -1,4 +1,4 @@
-﻿/*
+ /*
  * Created by SharpDevelop.
  * User: rolf
  * Date: 6/02/2013
@@ -290,11 +290,11 @@ try
 			//Now lets try and FTP it to the server
 			
 			 // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.raceready.com.au/timing/results-upload.html");
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://URLGOESHERE");
             request.Method = WebRequestMethods.Ftp.UploadFile;
 
             // This example assumes the FTP site uses anonymous logon.
-            request.Credentials = new NetworkCredential ("raceready","sc0rp200!!!");
+            request.Credentials = new NetworkCredential ("USERNAME","PASSWORD");
             
             //lets stop it appending the bloody results over and over again!
             
