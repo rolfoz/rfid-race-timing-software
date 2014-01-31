@@ -1,0 +1,15 @@
+#summary It all starts here.
+= Introduction =
+
+I suggest using the latest 4.x version of Monodevelop to checkout/build the code. Either build from source or if you are running Ubuntu and lazy use this PPA.
+
+sudo add-apt-repository ppa:ermshiperete/monodevelop
+sudo apt-get update
+sudo apt-get install monodevelop-current
+
+If you can help with the GUI or anything please get in touch.
+
+
+= Details =
+
+I just uploaded the 2 year old code, I'll start cleaning soon.
