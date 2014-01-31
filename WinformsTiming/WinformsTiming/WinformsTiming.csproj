@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WinformsTiming</RootNamespace>
+    <AssemblyName>WinformsTiming</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\rolf\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Impinj.OctaneSdk">
+      <HintPath>Impinj.OctaneSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="LLRP">
+      <HintPath>LLRP.dll</HintPath>
+    </Reference>
+    <Reference Include="LLRP.Impinj">
+      <HintPath>LLRP.Impinj.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite" />
+    <Reference Include="System.Data.SQLite.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbSqlite.cs" />
+    <Compile Include="DbSqlite.Designer.cs">
+      <DependentUpon>DbSqlite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="importcsv.cs" />
+    <Compile Include="importcsv.Designer.cs">
+      <DependentUpon>importcsv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Race.cs" />
+    <Compile Include="Race.Designer.cs">
+      <DependentUpon>Race.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Races.cs" />
+    <Compile Include="Races.Designer.cs">
+      <DependentUpon>Races.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs" />
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultsPrint.cs" />
+    <Compile Include="ResultsPrint.Designer.cs">
+      <DependentUpon>ResultsPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="runners.cs" />
+    <Compile Include="runners.Designer.cs">
+      <DependentUpon>runners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabs.cs" />
+    <Compile Include="tabs.Designer.cs">
+      <DependentUpon>tabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagWrite.cs" />
+    <Compile Include="TagWrite.Designer.cs">
+      <DependentUpon>TagWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxStreamWriter.cs" />
+    <Compile Include="TimersWindow.cs" />
+    <Compile Include="TimersWindow.Designer.cs">
+      <DependentUpon>TimersWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimingCode.cs" />
+    <Compile Include="TimingCode.Designer.cs">
+      <DependentUpon>TimingCode.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="importcsv.resx">
+      <DependentUpon>importcsv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Race.resx">
+      <DependentUpon>Race.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Races.resx">
+      <DependentUpon>Races.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultsPrint.resx">
+      <DependentUpon>ResultsPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="runners.resx">
+      <DependentUpon>runners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabs.resx">
+      <DependentUpon>tabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagWrite.resx">
+      <DependentUpon>TagWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimersWindow.resx">
+      <DependentUpon>TimersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimingCode.resx">
+      <DependentUpon>TimingCode.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Report1.srd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

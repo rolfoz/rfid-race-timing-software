@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsTiming", "WinformsTiming\WinformsTiming.csproj", "{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90CE89C-E6DF-4310-BD9C-EC7A2465824A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
